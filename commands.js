@@ -91,7 +91,7 @@ db.bounties.find({ reward: { $gte: 10000 } })
 // 3. Query for all bounties, but exclude the client attribute from being shown
 db.bounties.find({}, { client: 0 })
 
-// 4. Query for a Groundhog in the Woodlands
+// 4. Query for a Groundhog in the Woodlands (I am assuming you mean grasslands not woodlands, but I still put the commands for woodlands.)
 db.bounties.find({ $and: [{ species: "Groundhog" }, { location: "Woodlands" }] })
 
 // Update and Delete
